@@ -1,17 +1,41 @@
-#imgdex { position: relative; perspective: 4000px; transform-style: preserve-3d; padding-top: 58%; }
-#imgdex figure, #imgdex figure figcaption { position: absolute; transition: 1s ease-in-out; }
-#imgdex figure { top: 0; left: 120px; transform-origin: left bottom; width: 70%; }
-#imgdex figure figcaption { bottom: 0; font-size: 1.2rem; left: -8rem; opacity: 0; }
-#imgdex figure:last-of-type{ transform: rotateX(5deg); box-shadow: 0px 0px 200px rgba(0,0,0,0.5); }
+#imgdex { 
+  position: relative;
+  perspective: 4000px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  font-family: Avenir, Calibri, sans-serif;
+  padding-top: 48%;
+}
+#imgdex figure,
+  #imgdex figure figcaption { 
+    position: absolute;
+    transition: 1s ease-in-out;
+}
+#imgdex figure {
+  top: 0; left: 120px;
+  transform-origin: left bottom;
+  width: 70%;
+}
+#imgdex figure img {
+  width: 100%;
+}
+#imgdex figure figcaption { 
+  bottom: 0; 
+  font-size: 1.2rem;
+  left: -8rem;
+  opacity: 0;
+}
+#imgdex figure:last-of-type{ 
+  transform: rotateX(5deg);
+  box-shadow: 0px 0px 200px rgba(0,0,0,0.5);
+}
+form { 
+  text-align: center; 
+  padding-bottom: 2rem;
 
-
-
-/* slider upper limit - corresponds to total num of <figure> elements. 
-Set default value to same number.
-Place at bottom */
-
-var imgdex = document.getElementById('imgdex'),
-figs = imgdex.querySelectorAll('figure'),
-imgcount = figs.length;
-ranger.max = imgcount;
-ranger.value = imgcount;
+}
+form input[type="range"] { 
+  width: 50%;
+}

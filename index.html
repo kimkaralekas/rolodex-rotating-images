@@ -1,31 +1,62 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-  <title></title>
+
+  <meta charset="UTF-8">
+
+  <title>Rolodex Slider Test</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
 </head>
+
 <body>
 
-
-
-<div id="imgdex">
-<figure>
-<img src="arabic-eyes.jpg" alt="Bedouin headress">
-<figcaption>Bedouin</figcaption>
-</figure>
-<figure>
-<img src="blue-green-eyes.jpg" alt="Blue-green-eyes">
-<figcaption>Blue-green</figcaption>
-</figure>
-<figure>
-<img src="fake-eyelashes.jpg" alt="Fake eyelashes">
-<figcaption>Dramatic Fake</figcaption>
-</figure>
-<figure>
-<img src="snow-queen.jpg" alt="A girl in heavy snow">
-<figcaption>Snow</figcaption>
-</figure>
+  <div id="imgdex">
+  <figure>
+    <img src="img/food-1.jpg" alt="Photograph of a woman's face under a Bedouin headress">
+  </figure>
+  <figure>
+    <img src="img/food-2.jpg" alt="Photograph of a man's blue-green-eyes">
+  </figure>
+  <figure>
+    <img src="img/food-3.jpg" alt="Photograph of dramatic fake eyelashes in closeup">
+  </figure>
+  <figure>
+    <img src="img/food-4.jpg" alt="Photograph of a girl in heavy snow">
+  </figure>
 </div>
 
+
+<!--  <div id="imgdex">
+  <figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/arabic-eyes.jpg" alt="Photograph of a woman's face under a Bedouin headress"><figcaption>Bedouin</figcaption>
+  </figure>
+  <figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/blue-green-eyes.jpg" alt="Photograph of a man's blue-green-eyes"><figcaption>Blue-green</figcaption>
+  </figure>
+  <figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fake-eyelashes.jpg" alt="Photograph of dramatic fake eyelashes in closeup">
+    <figcaption>Dramatic Fake</figcaption>
+  </figure>
+  <figure>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/snow-queen.jpg" alt="Photograph of a girl in heavy snow"><figcaption>Snow</figcaption>
+  </figure>
+</div> -->
+
+
+
+
+
+<form>
 <input type="range" min="1" onfocus="this.oldvalue = this.value;" oninput="updateImage(this);this.oldvalue = this.value;" id="ranger">
+</form>
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+
+  <script src="js/index.js"></script>
 
 </body>
+
 </html>

@@ -1,5 +1,9 @@
-
-/* Move figures based on position of slider */ 
+var imgdex = document.getElementById('imgdex'),
+figs = imgdex.querySelectorAll('figure'),
+imgcount = figs.length;
+ranger.max = imgcount;
+ranger.value = imgcount;
+  
 for(var i=0;i<(imgcount-1);i++) {
 	var rotation = parseFloat(-92 + "." + (imgcount - i));
 	figs[i].style.webkitTransform = 'rotateX(' + rotation + 'deg)';
