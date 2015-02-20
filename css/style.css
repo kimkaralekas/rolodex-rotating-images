@@ -1,0 +1,17 @@
+#imgdex { position: relative; perspective: 4000px; transform-style: preserve-3d; padding-top: 58%; }
+#imgdex figure, #imgdex figure figcaption { position: absolute; transition: 1s ease-in-out; }
+#imgdex figure { top: 0; left: 120px; transform-origin: left bottom; width: 70%; }
+#imgdex figure figcaption { bottom: 0; font-size: 1.2rem; left: -8rem; opacity: 0; }
+#imgdex figure:last-of-type{ transform: rotateX(5deg); box-shadow: 0px 0px 200px rgba(0,0,0,0.5); }
+
+
+
+/* slider upper limit - corresponds to total num of <figure> elements. 
+Set default value to same number.
+Place at bottom */
+
+var imgdex = document.getElementById('imgdex'),
+figs = imgdex.querySelectorAll('figure'),
+imgcount = figs.length;
+ranger.max = imgcount;
+ranger.value = imgcount;
